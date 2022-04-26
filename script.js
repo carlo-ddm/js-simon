@@ -7,3 +7,17 @@
 // * Pensate prima in italiano.
 // * Dividete in piccoli problemi la consegna.
 // * Individuate gli elementi di cui avete bisogno per realizzare il programma.
+
+console.log('TEST');
+
+const inizio = document.getElementById('start');
+
+inizio.addEventListener('click',estrazione);
+
+function estrazione() {
+  let nEstratto = Math.ceil(Math.random() * 10);
+  console.log(nEstratto);
+  return nEstratto;
+}
+
+// Creare un ciclo for moltiplicare le estrazioni e pushare i risultati in un array
