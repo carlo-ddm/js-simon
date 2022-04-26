@@ -11,13 +11,21 @@
 console.log('TEST');
 
 const inizio = document.getElementById('start');
+const stampa = document.createElement('div');
 
 inizio.addEventListener('click',estrazione);
 
+const gruppo = [];
 function estrazione() {
-  let nEstratto = Math.ceil(Math.random() * 10);
-  console.log(nEstratto);
-  return nEstratto;
+  
+  gruppo.length = 0;
+  for (let i = 1; i <= 5; i++) {
+    let nEstratto = Math.ceil(Math.random() * 10);
+    console.log('Singolo numero estratto -->',nEstratto);
+    gruppo.push(nEstratto);
+  }
+  
+  console.log(gruppo);
 }
 
 // Creare un ciclo for moltiplicare le estrazioni e pushare i risultati in un array
