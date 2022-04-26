@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 145, 76, 0.875);
+  width: 100vw;
+  height: 100vh;
+}
+
+.output {
+  color: white;
+}
