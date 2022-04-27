@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 
-#pagina {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(27, 145, 76, 0.875);
-  width: 100vw;
-  height: 100vh;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: dodgerblue;
+
 }
 
-.output {
-  color: white;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: khaki;
 }
